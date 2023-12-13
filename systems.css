@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    overflow: hidden;
+    display: flex;
+}
+.logo-and-name-block{
+    display: flex;
+    margin: 0 0 .7vw .5vw;
+}
+img{
+    width: 4vw;
+    height: 4vw;
+}
+.logo-name{
+    color: #0A0044;
+    font-family: 'Prosto One', sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+.navbar{
+    background: #EAEEF7;
+    width: 220px;
+    height: 1024px;
+    padding: 30px;
+}
+.navbar .task-types-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    margin-top: 20px;
+}
+.navbar .task-types-buttons button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px; 
+    line-height: 50px;
+    border: none;
+    background-color: #EAEEF7;
+    font-weight: 500;
+    padding: 1vw 0 0 0;
+    text-align: center;
+}
+.nav-button-two{
+    display: flex;
+    margin-right: 300px;
+    list-style: none;
+    margin-top: 36px;
+    width: 76vw;
+}
+.nav-button-two button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px; 
+    border: none;
+    background:none;
+    border: none;
+    font-weight: 500;
+    padding: 2vw 4vw;
+}
+i{
+    color: rgb(152, 150, 150);
+    display: block;
+    width: 50px;
+    height: 40px;
+    font-size: 30px;
+    margin: 4px 6px;
+}
+iframe{
+    margin: 250px 0 0 10px;
+}
+.mainpage{ 
+    padding: 44px;
+}
+.search{
+    width: 80px;
+    height: 34px;
+    background-color: #316fec;
+    border: none;
+}
+.search i{
+    width: 28px;
+    height: 28px;
+    color: #EAEEF7;
+}
+#searchInput{
+    height: 24px;
+    width: 260px;
+    border-width: 1px 0 1px 1px;
+    font-size: 16px;
+    font-size: 1rem;
+    padding: 1rem;
+    vertical-align: top;
+}
+#todoList {
+    width: 80vw;
+    border: 1px solid #ccc;
+    border: none;
+}
+#taskInput {
+    width: 50vw;
+    padding: 8px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+#dataPick{
+    width: 12vw;
+    padding: 6px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+.listtask {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    width: 72.6vw;
+}
+.addtask-button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 10vw;
+    margin-top: 10px; 
+}
+.addtask-button:hover {
+    background-color: #45a049;
+}
+.delete {
+    background-color: #f44336;
+    color: white; 
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    width: 80px;
+}
+.delete:hover {
+    background-color: #d32f2f;
+}
+.update {
+    background-color: #4caf50; 
+    color: white; 
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; 
+    float: right;
+    margin-left: 8px;
+    width: 80px;
+}
+.update:hover {
+    background-color: #45a049; 
+}
+.completed {
+    background-color: #fa6fce;
+    color: white; 
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-right: 8px;
+    width: 80px;
+}
+.completed:hover {
+    background-color: rgb(157, 0, 123);
+}
+.task {
+    display: none;
+    margin-top: 40px;
+}
+#tasks {
+    display: block;
+    margin-top: 40px;
+}
+.task h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+#participantEmail{
+    width: 46vw;
+    padding: 8px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+#meetingDate{
+    width: 20vw;
+    padding: 6px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.addmeeting-button{
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 6vw;
+    margin-top: 10px; 
+}
+.addtask-button:hover {
+    background-color: #45a049;
+}
+#signout {
+    background-color: #316fec; 
+    color: #ffffff; 
+    padding: 4px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    vertical-align: top;
+    margin-left: 600px;
+}
+#signout:hover {
+    background-color: #0e3677; 
+}
+#signout:active {
+    background-color: #011a41; 
+}
+#signout i{
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    color: #EAEEF7;
+}
+@media (max-width: 768px) {
+    body{
+        overflow: visible;
+    }
+    img{
+        width: 12vw;
+        height: 12vw;
+    }
+    .logo-name{
+        display: none;
+    }
+    .navbar{
+        background: white;
+        width: 0;
+        height: 0;
+        padding: 10px;
+        display: block;
+    }
+    .navbar .task-types-buttons{
+        display: none;
+    }
+    .navbar .task-types-buttons button{
+        display: none;
+    }
+    i{
+        width: 20px;
+        height: 20px;
+        font-size: 24px;
+        margin: auto;
+        margin-top: 4px;
+    }
+    iframe{
+        display: none;
+    }
+    .mainpage{ 
+        padding: 20px;
+        width: 86vw;
+    }
+    .search{
+        width: 32px;
+        height: 32px;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+        margin-left: 2px;
+    }
+    #searchInput{
+        height: 16px;
+        width: 200px;
+        font-size: 16px;
+        font-size: 1rem;
+        padding: 1rem;
+        vertical-align: top;
+        margin-left: 30px;
+    }
+    #taskInput {
+        padding: 8px;
+    }
+    #dataPick{
+        vertical-align: middle;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .listtask {
+        padding: 8px 0;
+    }
+    .addtask-button {
+        width: 50px;
+        margin-top: 10px; 
+    }
+    .delete {
+        width: 13vw;
+        float: right;
+    }
+    .update {
+        display: flex;
+        margin-left: 2px;
+        width: 46px;
+        float: right;
+    }
+    #meetingDate{
+        vertical-align: middle;
+    }
+    .completed {
+        margin-right: 2px;
+        width: 46px;
+        float: right;
+    }
+    .task {
+        display: none;
+        margin-top: 40px;
+    }
+    #tasks {
+        display: block;
+        margin-top: 40px;
+    }
+    .task h2{
+        font-size: 28px;
+    }
+    .listtask {
+        width: 80vw;
+    }
+    #participantEmail{
+        width: 45vw;
+    }
+    #signout {
+        padding: 7px 10px;
+        border-radius: 18px;
+        font-size: 16px;
+        vertical-align: top;
+        margin-left: 10px;
+    }
+    #signout i{
+        display: none;
+    }
+    .nav-button-two{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin-top: 36px;
+    }
+    .nav-button-two button{
+        font-size: 16px; 
+        padding: 1vw 0 0 0;
+    }
+    .addmeeting-button{
+        width: 13vw;
+        margin-top: 10px; 
+    }
+}

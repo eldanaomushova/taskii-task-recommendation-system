@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow: hidden;
+}
+.signin-page{
+    display: flex;
+}
+.logo-login-page{
+    width: 50%;
+    height: 100vh;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #E6E6F0;
+}
+.logo-login-page > img{
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+    height: auto;
+    margin-left: 40px;
+}
+.logo-name{
+    color: #0A0044;
+    font-family: 'Prosto One', sans-serif;
+    font-size: 100px;
+    font-weight: 400;
+}
+.circle1{
+    width: 300px;
+    height: 280px;
+    border-radius: 334px;
+    background: linear-gradient(-45deg,#E9F3FF 10%,  #4F9DFF 100%);
+    position: absolute;
+    top: -130px;
+    left: 32%;
+    transform: translateX(-50%);
+}
+.circle2{
+    width: 330px;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 378px;
+    background: linear-gradient(50deg, #FBE260 0%, #FFF9D9 100%);
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.logo-login-signin{
+    width: 44%;
+    height: 100vh;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #ffffff;
+    z-index: 1;
+}
+.circle3{
+    width: 250px;
+    height: 250px;
+    border-radius: 291px;
+    background: linear-gradient(180deg, #FFD9D9 0%, #F99 100%); 
+    position: absolute;
+    top: 480px;
+    left: 0%;
+    transform: translateX(-50%);
+}
+.circle4{
+    width: 250px;
+    height: 250px;
+    border-radius: 291px;
+    background: linear-gradient(234deg, #F4D6FE 18.72%, #E28BFF 82.8%);
+    position: absolute;
+    top: 688px;
+    left: 45%;
+    transform: translateX(-50%);
+}
+.circle5{
+    width: 68px;
+    height: 68px;
+    border-radius: 291px;
+    background: linear-gradient(234deg, #9EFCF1 18.72%, #60C5E5 82.8%);
+    position: absolute;
+    top: 666px;
+    left: 38%;
+}
+.create-account{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+}
+.logo-login-page .taskii-smalltext{
+    position: absolute;
+    bottom: 30px;
+    left: 24%;
+    transform: translateX(-50%);
+    color: #7A7A7A;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.logo-login-signin form{
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+}
+label {
+    display: block;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: left;   
+    margin: 50px 30px 0 44px;
+}
+input[type="email"],
+input[type="password"] {
+    display: inline-block;
+    width: 500px;
+    border: none;
+    border-bottom: 1px solid #ccc; 
+    padding: 4px; 
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    color: #313131;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin:20px 0 0 40px;
+}
+input[type="email"]::placeholder ,
+input[type="password"]::placeholder {
+    color: #e0e0e0;
+}
+#terms-conditions-container{
+    margin: 50px;
+    display: inline-block;
+}
+#terms-conditions{
+    display: inline;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 5px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+#agree{
+    display: inline-block;
+    margin: 6px 18px 6px 0;
+    transform: scale(2.0);
+}
+.logo-login-signin .buttons{
+    margin-top: 20px; 
+}
+#login-button,
+#signin-button {
+    width: 218px;
+    height: 50px;
+    border-radius: 30px;
+    background: #5E81FF;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 26px;
+    border: 2px solid #5E81FF;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.5s ease;
+}
+
+#login-button::before,
+#signin-button::before {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+    z-index: -1;
+}
+
+#login-button:hover,
+#signin-button:hover {
+    transform: scale(1.1);
+    background-color: #3457b5; 
+}
+
+#login-button:hover::before,
+#signin-button:hover::before {
+    transform: scale(1);
+    background-color: #3457b5; 
+}
+
+
+
+@media (max-width: 768px) {
+    .signin-page{
+        display: inline-block;
+    }
+    .logo-login-page{
+        width: 100vw;
+        height: 100%; 
+        display: inline-block; 
+        padding: 80px 0;
+    }
+    .logo-login-page > img{
+        width: 74px;
+        height: 74px;
+    }
+    .logo-name{
+        font-size: 50px;
+        margin-left: 25px;
+    }
+    .circle1,
+    .circle2,
+    .circle3,
+    .circle4,
+    .circle5
+    {
+        visibility: hidden;
+    }
+    .logo-login-signin{
+        width: 100vw;
+        height: 60vh; 
+        display: inline-block; 
+        background-color:#E6E6F0;
+    }
+    .create-account{
+        font-size: 28px;
+    }
+    .logo-login-page .taskii-smalltext{
+        visibility: hidden;
+    }
+    label {
+        display: block;
+        font-size: 18px; 
+        margin: 30px 24px 0 34px;
+    }
+    input[type="email"],
+    input[type="password"] {
+        width: 84vw;
+        margin: 20px 20px 0 18px;
+    }
+    #terms-conditions-container{
+        margin: 10px;
+    }
+    #terms-conditions{
+        font-size: 14px;
+        margin-left: 2px;
+    }
+    #agree{
+        display: inline-block;
+        margin: 4px 14px;
+        transform: scale(1.6);
+    }
+    .logo-login-signin .buttons{
+        margin-top: 10px; 
+    }
+    #login-button,
+    #signin-button{
+        width: 160px;
+        height: 40px;
+        border-radius: 30px;
+        font-size: 18px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+}

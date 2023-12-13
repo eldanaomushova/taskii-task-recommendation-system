@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+.main{
+    background-color: #E6E6F0;
+    height: 100vh;
+}
+nav #logo{
+    width: 55px;
+    height: 55px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 60vw 0 3vw;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    padding: 1.3vw 2vw 0 0;
+}
+nav ul a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    z-index: 2;
+}
+.no-style-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav #nav-whitetext{
+    color: white;
+}
+nav #nav-whitetext:hover{
+    color: #fcd824;
+}
+.nav-list li:hover{
+    color: #3c5dc1; 
+    cursor: pointer;
+}
+nav ul li:active{
+    color: #597ce8; 
+}
+.whole-page{
+    display: flex;
+}
+.words{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    width: 50%;
+}
+.words h1, 
+.words h2{
+    display: inline-block;
+    padding: 1vw 3vw 1.2vw 5vw;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+.words h1{
+    font-size: 34px;
+}
+.whole-page button{
+    width: 218px;
+    height: 50px;
+    border-radius: 30px;
+    background: #4769E2;
+    margin: 1vw 3vw 1.2vw 5vw;
+    text-align: center;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    outline: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: none;
+    border: none;
+}
+.whole-page button:hover{
+    background-color: #3457b5; 
+    color: white;
+}
+.whole-page button:active{
+    background-color: #1f326a; 
+    color: white;
+    transform: scale(1);
+}
+.image-of-system-block{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.rectangle{
+    position: absolute;
+    right: 0;
+    width: 270px;
+    height: 1024px;
+    background: #1166D0;
+    bottom: 0;
+    z-index: 1;
+}
+#image{
+    max-width: 100%;
+    max-height: 100%;
+    width: 582px;
+    box-shadow: 14px 15px 4px 0px #FBE260;
+    z-index: 2;
+}
+.canmake-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 7vw; 
+    list-style: disc;
+}
+
+.canmake-list li {
+    position: relative;
+    margin-bottom: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px; 
+}
+
+.canmake-list li:before {
+    position: absolute;
+    left: 0;
+    color: #4769E2;
+    font-size: 16px; 
+}
+
+.whole-page-button {
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 1s, color 1s;
+}
+
+.whole-page-button button {
+    width: 218px;
+    height: 50px;
+    border-radius: 30px;
+    background: #4769E2;
+    margin: 1vw 3vw 1.2vw 5vw;
+    text-align: center;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.whole-page-button button:hover {
+    background-color: #3457b5;
+    color: white;
+}
+
+.whole-page-button button:active {
+    background-color: #1f326a;
+    color: white;
+    transform: scale(1);
+}
+@media (max-width: 768px) {
+    body{
+        overflow: visible;
+    }
+    .main{
+        height: 100%;
+    }
+    nav #logo{
+        width: 18vw;
+        height: 18vw;
+        margin: 0 5vw 0 2vw;
+    }
+    nav ul{
+        padding: 1.3vw 2vw 0 0;
+    }
+    nav ul li{
+        font-size: 18px;
+    }
+    .whole-page{
+        display: inline-block;
+    }
+    .words{
+        height: 80vh;
+        width: 100%;
+    }
+    .words h1, 
+    .words h2{
+        display: inline-block;
+        padding: 2vw 3vw 2vw 5vw;
+        font-size: 20px;
+    }
+    .words h1{
+        font-size: 34px;
+    }
+    nav #nav-whitetext{
+        color: black;
+    }
+    .rectangle{
+        visibility: hidden;
+    }
+    #image {
+        max-width: 100%;
+        width: 400px; 
+        box-shadow: 10px 12px 3px 0px #FBE260;
+        z-index: 2;
+    }
+    .canmake-list {
+        padding-left: 7vw; 
+    }
+    .canmake-list li {
+        margin-left: 20px;
+    }
+    
+    .whole-page-button button {
+        width: 90vw;
+        margin: 5vw;
+    }
+}
